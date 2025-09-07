@@ -1,0 +1,17 @@
+.video-list {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 80px 10px 20px 10px;
+}
+
+.video-list h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive grid */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
