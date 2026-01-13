@@ -6,7 +6,7 @@ function Boxes() {
     <div style={styles.container}>
       <div style={styles.box}>
         <img src="kabe.png" alt="Hac Rehberi" style={styles.image} />
-        <h3 style={styles.title}>Hac Bilgileri</h3>
+        <h3 style={styles.title}>ac Bilgileri</h3>
         <p style={styles.text}>
           Hac ibadeti hakkında detaylı bilgilere ulaşabilirsiniz.
         </p>
