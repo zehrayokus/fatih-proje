@@ -28,40 +28,49 @@ const footerStyle = {
   color: "black",
   padding: "30px 0",
   width: "100%",
-  position: "relative",
-  bottom: 0,
 };
 
 const containerStyle = {
-  maxWidth: "900px",         // sayfadan taşmasın diye
-  margin: "0 auto",          // ortalamak için
+  width: "100%",
+  maxWidth: "100%",
+  margin: "0 auto",
+  padding: "0 16px", // 🔑 kenarlardan az boşluk
   display: "flex",
   justifyContent: "center",
-  alignItems: "flex-start",
-  gap: "100px",               // sol ve sağ grup arası boşluk
+  alignItems: "center",
+  gap: "40px",
+  flexWrap: "wrap", // 🔑 MOBİLDE ALT ALTA
+  boxSizing: "border-box",
 };
 
 const leftStyle = {
   display: "flex",
   flexDirection: "column",
-  alignItems: "flex-end",
+  alignItems: "center", // 🔑 mobil uyum
 };
 
 const rightStyle = {
   display: "flex",
   flexDirection: "column",
-  alignItems: "flex-start",
+  alignItems: "center", // 🔑 mobil uyum
 };
 
 const dividerStyle = {
   width: "1px",
+  height: "80px",
   backgroundColor: "#888",
-  margin: "0 20px",
 };
 
+/* MOBİLDE DİKEY ÇİZGİYİ GİZLE */
+const isMobile = window.innerWidth < 768;
+if (isMobile) {
+  dividerStyle.display = "none";
+}
+
 const textStyle = {
-  margin: "10px 0",
-  fontSize: "18px",
+  margin: "8px 0",
+  fontSize: "17px",
+  textAlign: "center",
 };
 
 const linkStyle = {

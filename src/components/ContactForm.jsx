@@ -75,24 +75,29 @@ const containerStyle = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "flex-start",
-  gap: "50px",
-  maxWidth: "900px",
-  margin: "50px auto",
+  gap: "30px",
+  width: "100%",
+  maxWidth: "100%",
+  margin: "40px auto",
+  padding: "0 16px", // 🔑 kenarlardan az boşluk
+  boxSizing: "border-box",
+  flexWrap: "wrap", // 🔑 mobilde alt alta
 };
 
 const textBoxStyle = {
-  flex: 1,
+  flex: "1 1 280px",
   fontSize: "20px",
   color: "#001016ff",
   lineHeight: "1.6",
+  maxWidth: "420px",
 };
 
 const formStyle = {
   display: "flex",
   flexDirection: "column",
-  gap: "15px",
-  maxWidth: "400px",
-  flex: 1,
+  gap: "10px",
+  flex: "1 1 320px",
+  maxWidth: "420px",
 };
 
 const inputStyle = {
@@ -111,8 +116,8 @@ const textareaStyle = {
 };
 
 const buttonStyle = {
-  padding: "22px",
-  fontSize: "18px",
+  padding: "18px",
+  fontSize: "17px",
   borderRadius: "6px",
   border: "none",
   backgroundColor: "#0b3d51",

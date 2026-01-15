@@ -24,10 +24,20 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 h1 {
@@ -52,6 +62,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
 }
 
 @media (prefers-color-scheme: light) {

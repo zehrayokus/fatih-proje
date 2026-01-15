@@ -2,12 +2,12 @@
 import React from "react";
 
 const fotoData = [
-  { src: "fatihkabe.jpeg", title: "Kabe", description: "Kabe-i Muazzama'nın detaylı görüntüsü." },
-  { src: "fatihtoplu.jpeg", title: "Mina", description: "Hac yolculuğu sırasında Mina bölgesi." },
-  { src: "fatih1.jpeg", title: "Arafat", description: "Arafat'ta vakfe yapan hacılar." },
-  { src: "fatih.jpeg", title: "Müzdelife", description: "Güneş batımında Müzdelife." },
-  { src: "fatihhac.jpeg", title: "Tavaf", description: "Kabe etrafında tavaf yapanlar." },
-  { src: "fatih2.jpeg", title: "Sa’y", description: "Safa ve Merve arasında sa’y ibadeti." },
+  { src: "fatihkabe.jpeg",},
+  { src: "fatihtoplu.jpeg",},
+  { src: "fatih1.jpeg", },
+  { src: "fatih.jpeg", },
+  { src: "fatihhac.jpeg", },
+  { src: "fatih2.jpeg", },
 ];
 
 function Foto() {
@@ -33,31 +33,39 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    gap: "30px",
-    marginBottom: "50px",
+    gap: "10px",
+    marginBottom: "10px",
   },
   row: {
     display: "flex",
-    gap: "30px",
+    gap: "10px",
     justifyContent: "center",
     width: "100%",
   },
   box: {
-    width: "500px",
+    width: "100%",
+    maxWidth: "500px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     textAlign: "center",
     borderRadius: "12px",
-    padding: "25px",
+    padding: "10px",
     backgroundColor: "white",
   },
-  image: {
-    width: "100%",
-    height: "420px",
-    objectFit: "cover",
-    borderRadius: "8px",
-  },
+  imageWrapper: {
+  width: "100%",
+  aspectRatio: "4 / 3", // 🔑 yatay + dikey için ideal
+  overflow: "hidden",
+  borderRadius: "8px",
+},
+
+image: {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+},
+
   title: {
     fontSize: "28px",
     fontWeight: "bold",

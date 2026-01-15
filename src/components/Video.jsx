@@ -1,39 +1,44 @@
 import React from "react";
+import "./Video.css";
 
 function Video({ video }) {
   return (
-   <div id="hakkimda" style={{ ...videoContainer, scrollMarginTop: "120px" }}>
+  <div
+    id="hakkimda"
+    className="video-container"
+  >
+    {/* BAŞLIK */}
+    <h2 className="video-title">
+      <a
+        href={video.channelUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {video.title}
+      </a>
+    </h2>
 
-      <h2 style={{ marginBottom: "10px" }}>
-        <a
-          href={video.channelUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: "none", color: "#ff0000" }}
-        >
-          {video.title}
-        </a>
-      </h2>
+    {/* VİDEO */}
+    <div className="video-wrapper">
       <iframe
-        width="560"
-        height="315"
         src={video.src}
         title={video.title}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        style={{ borderRadius: "8px" }}
       ></iframe>
-      <p style={{ marginTop: "10px", maxWidth: "560px" }}>{video.description}</p>
-
     </div>
-  );
-}
 
-const videoContainer = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "flex-start", // sola hizala
-};
+    {/* YAZI – VİDEONUN ALTINDA */}
+    <p className="video-about">
+      Merhaba! Benim kişisel YouTube kanalıma hoş geldiniz.
+      Kanalımda Türkçe ve Kürtçe olarak dini sohbetler, vaazlar,
+      Şafii ve Hanefi fıkhı ile ilgili anlatımlar, menkıbeler,
+      siyer ve vaazlar paylaşılmaktadır. 🙌
+    </p>
+  </div>
+);
+
+}
 
 export default Video;

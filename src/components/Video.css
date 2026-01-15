@@ -1,33 +1,64 @@
-.video-card {
-  background: #f0f8ff;
-  padding: 10px;
-  margin: 10px 0;
+/* VIDEO BLOĞU – NAVBAR ALTINDA */
+.video-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 10px auto 60px; /* üst boşluk KÜÇÜLTÜLDÜ */
+  padding: 90px 16px;
+  box-sizing: border-box;
+}
+
+/* Video başlığı */
+.video-title {
+  margin-bottom: 12px;
+}
+
+.video-title a {
+  text-decoration: none;
+  color: #083142;
+}
+
+/* Açıklama yazısı (videonun üstünde) */
+.video-about {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #083142;
+  margin-bottom: 16px;
+  max-width: 900px;
+}
+
+/* Responsive iframe – KESİN ÇÖZÜM */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  flex: 1 1 300px;
+  overflow: hidden;
 }
 
-.video-card video {
-  border-radius: 8px;
-  max-width: 100%;
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-.video-card h3 {
-  margin: 5px 0;
-  font-size: 1.1rem;
+/* Alt açıklama (kullanılmıyorsa sorun değil) */
+.video-desc {
+  margin-top: 12px;
+  line-height: 1.6;
 }
 
-.video-card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-.video-list {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 10px;
-}
+/* MOBİL İNCE AYAR */
+@media (max-width: 768px) {
+  .video-container {
+    margin: 8px auto 40px; /* Navbar’a daha yakın */
+  }
 
-.video-list h2 {
-  margin-bottom: 15px;
-  color: #333;
+  .video-about {
+    font-size: 16px;
+    color: #083142;
+    font-weight: 500;
+  }
 }

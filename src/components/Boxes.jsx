@@ -6,33 +6,37 @@ function Boxes() {
     <div style={styles.container}>
       <div style={styles.box}>
         <img src="kabe.png" alt="Hac Rehberi" style={styles.image} />
-        <h3 style={styles.title}>ac Bilgileri</h3>
+        <h3 style={styles.title}>Kâbe’ye Yöneliş</h3>
         <p style={styles.text}>
-          Hac ibadeti hakkında detaylı bilgilere ulaşabilirsiniz.
+         “Allah’a iman edin ve Resûlü’ne itaat edin ki size rahmet edilsin.”
+(Âl-i İmrân Suresi, 132)
         </p>
       </div>
 
       <div style={styles.box}>
-        <img src="kuran.png" alt="Umre Bilgileri" style={styles.image} />
-        <h3 style={styles.title}>Umre Rehberi</h3>
+        <img src="ihram.png" alt="Umre Bilgileri" style={styles.image} />
+        <h3 style={styles.title}>İman ile Yakınlaşma</h3>
         <p style={styles.text}>
-          Umre yolculuğu için gerekli tüm bilgileri keşfedin.
+          “Ey insanlar! Sizi ve sizden öncekileri yaratan Rabbinize ibadet edin ki takvaya eresiniz.”
+(Bakara Suresi, 21)
         </p>
       </div>
 
       <div style={styles.box}>
-        <img src="ihram.png" alt="Hac Takvimi" style={styles.image} />
-        <h3 style={styles.title}>Manevi Hazırlık</h3>
+        <img src="kuran.png" alt="Hac Takvimi" style={styles.image} />
+        <h3 style={styles.title}>Allah’a Yakınlık</h3>
         <p style={styles.text}>
-          Hac ve umre için önemli tarihleri buradan öğrenin.
+          “Allah’a yönelen kimse için O, mutlaka bir çıkış yolu ihsan eder.”
+(Talâk Suresi, 2)
         </p>
       </div>
 
       <div style={styles.box}>
-        <img src="kuranokuyan.png" alt="Faydalı Bilgiler" style={styles.image} />
-        <h3 style={styles.title}>Faydalı Bilgiler</h3>
+        <img src="kuranokuyan.png" style={styles.image} />
+        <h3 style={styles.title}>Tövbe ile Yenilenme</h3>
         <p style={styles.text}>
-          Seyahatinizde işinize yarayacak pratik bilgilere göz atın.
+         “Kalpler ancak Allah’ı anmakla huzur bulur.”
+(Ra‘d Suresi, 28)
         </p>
       </div>
     </div>
@@ -43,15 +47,15 @@ const styles = {
   container: {
     display: "flex",
     justifyContent: "center", // yatayda ortala
-    gap: "30px",
+    gap: "15px",
     marginTop: "-30px",
     marginBottom: "100px",
     width: "100%", // container tüm genişlikte
-    maxWidth: "1500px", // maksimum genişlik
+    maxWidth: "100%", // maksimum genişlik
   },
   box: {
-    width: "280px", // sabit genişlik
-    height: "280px",
+    width: "100%", // sabit genişlik
+    height: "100%",
     backgroundColor: "#f9f9f9",
     border: "1px solid #ddd",
     borderRadius: "12px",
@@ -80,7 +84,7 @@ const styles = {
   text: {
     fontSize: "15px",
     color: "#333",
-    lineHeight: "1.4",
+    lineHeight: "1.3",
   },
 };
 

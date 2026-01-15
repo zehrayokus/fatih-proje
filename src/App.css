@@ -43,3 +43,27 @@
 .content {
   padding-top: 70px; /* navbar yüksekliğine göre ayarla */
 }
+/* Video alanı responsive */
+@media (max-width: 992px) {
+  .video-wrapper {
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  .video-box iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+  }
+
+  .text-box {
+    max-width: 100% !important;
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 20px !important;
+  }
+}
