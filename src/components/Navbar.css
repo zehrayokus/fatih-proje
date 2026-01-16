@@ -27,6 +27,8 @@
   height: 62px;
     width: 90px;
     border-radius: 10px;
+    object-fit: cover;      /* 🔥 fotoğrafı kırparak doldurur */
+  object-position: center;
 }
 
 /* Menü */
@@ -45,7 +47,7 @@
 /* Hamburger */
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   cursor: pointer;
   z-index: 10001;        /* 🔥 EN ÜSTTE */
@@ -62,10 +64,12 @@
 
   /* Logo mobilde küçük */
   .logo img {
-    height: 62px;
+    height: 65px;
     width: 90px;
     margin-left: 10px;
     border-radius: 12px;
+    object-fit: cover;      /* 🔥 fotoğrafı kırparak doldurur */
+  object-position: center;
   }
 
   .menu {
@@ -81,6 +85,8 @@
     gap: 5px;
     z-index: 10000;
     border: 1px solid rgba(255, 255, 255, 0.35);
+    object-fit: cover;      /* 🔥 fotoğrafı kırparak doldurur */
+  object-position: center;
   }
 
   .menu.open {
@@ -89,7 +95,7 @@
 
   .menu a {
     text-align: center;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
   }
 
   .hamburger {

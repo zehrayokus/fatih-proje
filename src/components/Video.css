@@ -3,13 +3,13 @@
   width: 100%;
   max-width: 900px;
   margin: 10px auto 60px; /* üst boşluk KÜÇÜLTÜLDÜ */
-  padding: 90px 16px;
+  padding: 70px 16px;
   box-sizing: border-box;
 }
 
 /* Video başlığı */
 .video-title {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-title a {
@@ -22,7 +22,7 @@
   font-size: 18px;
   line-height: 1.6;
   color: #083142;
-  margin-bottom: 16px;
+  margin-bottom: 1px;
   max-width: 900px;
 }
 

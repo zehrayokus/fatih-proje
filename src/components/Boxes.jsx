@@ -8,8 +8,8 @@ function Boxes() {
         <img src="kabe.png" alt="Hac Rehberi" style={styles.image} />
         <h3 style={styles.title}>Kâbe’ye Yöneliş</h3>
         <p style={styles.text}>
-         “Allah’a iman edin ve Resûlü’ne itaat edin ki size rahmet edilsin.”
-(Âl-i İmrân Suresi, 132)
+          “Allah’a iman edin ve Resûlü’ne itaat edin ki size rahmet edilsin.”
+          (Âl-i İmrân Suresi, 132)
         </p>
       </div>
 
@@ -18,7 +18,7 @@ function Boxes() {
         <h3 style={styles.title}>İman ile Yakınlaşma</h3>
         <p style={styles.text}>
           “Ey insanlar! Sizi ve sizden öncekileri yaratan Rabbinize ibadet edin ki takvaya eresiniz.”
-(Bakara Suresi, 21)
+          (Bakara Suresi, 21)
         </p>
       </div>
 
@@ -27,7 +27,7 @@ function Boxes() {
         <h3 style={styles.title}>Allah’a Yakınlık</h3>
         <p style={styles.text}>
           “Allah’a yönelen kimse için O, mutlaka bir çıkış yolu ihsan eder.”
-(Talâk Suresi, 2)
+          (Talâk Suresi, 2)
         </p>
       </div>
 
@@ -35,8 +35,8 @@ function Boxes() {
         <img src="kuranokuyan.png" style={styles.image} />
         <h3 style={styles.title}>Tövbe ile Yenilenme</h3>
         <p style={styles.text}>
-         “Kalpler ancak Allah’ı anmakla huzur bulur.”
-(Ra‘d Suresi, 28)
+          “Kalpler ancak Allah’ı anmakla huzur bulur.”
+          (Ra‘d Suresi, 28)
         </p>
       </div>
     </div>
@@ -46,45 +46,50 @@ function Boxes() {
 const styles = {
   container: {
     display: "flex",
-    justifyContent: "center", // yatayda ortala
-    gap: "15px",
-    marginTop: "-30px",
-    marginBottom: "100px",
-    width: "100%", // container tüm genişlikte
-    maxWidth: "100%", // maksimum genişlik
+    flexWrap: "wrap",              // 🔴 ALT SATIRA GEÇ
+    justifyContent: "space-between",
+    gap: "10px",
+    width: "100%",
+    maxWidth: "900px",
+    margin: "0 auto 100px auto",
+    boxSizing: "border-box",
   },
+
   box: {
-    width: "100%", // sabit genişlik
-    height: "100%",
+    width: "48%",                  // 🔴 2 KUTU YAN YANA
     backgroundColor: "#f9f9f9",
-    border: "1px solid #ddd",
-    borderRadius: "12px",
+    border: "1px solid #e0e0e0",
+    borderRadius: "14px",
+    padding: "10px",
+    textAlign: "center",
+    boxShadow: "0 6px 14px rgba(0,0,0,0.08)",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
-    padding: "15px",
-    textAlign: "center",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-    transition: "0.3s",
-    cursor: "pointer",
+    boxSizing: "border-box",
   },
+
   image: {
-    width: "80px",
-    height: "80px",
+    width: "70px",
+    height: "70px",
     objectFit: "contain",
-    marginBottom: "10px",
+    marginBottom: "1px",
   },
+
   title: {
-    fontSize: "18px",
-    fontWeight: "bold",
+    fontSize: "17px",
+    fontWeight: "600",
     color: "#0b3d51",
-    marginBottom: "5px",
+    marginBottom: "1px",
+    wordBreak: "break-word",
   },
+
   text: {
-    fontSize: "15px",
-    color: "#333",
-    lineHeight: "1.3",
+    fontSize: "14px",
+    color: "#444",
+    lineHeight: "1.2",
+    wordBreak: "break-word",       // 🔴 TAŞMA YOK
+    overflowWrap: "break-word",
   },
 };
 
