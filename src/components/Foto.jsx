@@ -16,7 +16,7 @@ function Foto() {
       id="hizmetler"
       style={{
         ...styles.outerWrapper,
-        backgroundImage: "url(/arka.png)", // 🔴 TEK ARKA PLAN FOTOĞRAFI
+        backgroundImage: "url(/sarka.png)", // 🔴 TEK ARKA PLAN FOTOĞRAFI
         scrollMarginTop: "100px",
       }}
     >
