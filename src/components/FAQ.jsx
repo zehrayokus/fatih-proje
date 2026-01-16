@@ -115,7 +115,7 @@ const styles = {
   },
   subtitle: {
     marginTop: "10px",
-    fontSize: "18px",
+    fontSize: "17px",
     color: "#000",
     lineHeight: "1.4",
   },
@@ -138,7 +138,7 @@ const styles = {
     marginTop: "8px",
     color: "#000",
     lineHeight: "1.5",
-    fontSize: "16px",
+    fontSize: "15px",
   },
   icon: {
     marginLeft: "10px",

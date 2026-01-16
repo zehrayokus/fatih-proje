@@ -22,14 +22,14 @@ function ContactForm() {
   return (
     <div
       id="iletisim"
-      style={{ ...containerStyle, paddingTop: "0px", marginTop: "90px" }} // navbar payı bırakıldı
+      style={{ ...containerStyle, marginTop: "70px" }} // navbar payı bırakıldı
     >
       {/* Sol yazı kısmı */}
       <div style={textBoxStyle}>
         <h2>İletişime Geçin 👉</h2>
         <p>
           Görüş, öneri veya sorularınızı formu yazıp gönderebilirsiniz.
-          En kısa sürede sizinle iletişime geçeceğiz.
+          En kısa sürede sizinle ime geçeceğiz.
         </p>
       </div>
 
@@ -86,9 +86,9 @@ const containerStyle = {
 
 const textBoxStyle = {
   flex: "1 1 280px",
-  fontSize: "20px",
+  fontSize: "18px",
   color: "#001016ff",
-  lineHeight: "1.6",
+  lineHeight: "1.5",
   maxWidth: "420px",
 };
 

@@ -26,7 +26,7 @@ function Footer() {
 const footerStyle = {
   background: "#d8dddda8",
   color: "black",
-  padding: "30px 0",
+  padding: "10px 0",
   width: "100%",
 };
 
@@ -69,7 +69,7 @@ if (isMobile) {
 
 const textStyle = {
   margin: "8px 0",
-  fontSize: "17px",
+  fontSize: "14px",
   textAlign: "center",
 };
 
