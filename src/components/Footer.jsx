@@ -38,7 +38,7 @@ const containerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  gap: "40px",
+  gap: "10px",
   flexWrap: "wrap", // 🔑 MOBİLDE ALT ALTA
   boxSizing: "border-box",
 };
@@ -68,7 +68,7 @@ if (isMobile) {
 }
 
 const textStyle = {
-  margin: "8px 0",
+  margin: "6px 0",
   fontSize: "14px",
   textAlign: "center",
 };

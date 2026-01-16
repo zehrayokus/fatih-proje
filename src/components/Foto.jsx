@@ -12,64 +12,95 @@ const fotoData = [
 
 function Foto() {
   return (
-    <div id="hizmetler" style={{ ...styles.container, scrollMarginTop: "100px" }}>
-      {Array.from({ length: 3 }).map((_, rowIndex) => (
-        <div key={rowIndex} style={styles.row}>
-          {fotoData.slice(rowIndex * 2, rowIndex * 2 + 2).map((item, index) => (
-            <div key={index} style={styles.box}>
-              <img src={item.src} alt="" style={styles.image} />
-              {/* title kaldırıldı */}
-              <p style={styles.description}>{item.description}</p>
-            </div>
-          ))}
-        </div>
-      ))}
+    <div
+      id="hizmetler"
+      style={{
+        ...styles.outerWrapper,
+        backgroundImage: "url(/arka.png)", // 🔴 TEK ARKA PLAN FOTOĞRAFI
+        scrollMarginTop: "100px",
+      }}
+    >
+      <div style={styles.fadeOverlay} />
+      <div style={styles.container}>
+        {Array.from({ length: 3 }).map((_, rowIndex) => (
+          <div key={rowIndex} style={styles.row}>
+            {fotoData.slice(rowIndex * 2, rowIndex * 2 + 2).map((item, index) => (
+              <div key={index} style={styles.box}>
+                <img src={item.src} alt="" style={styles.image} />
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
 const styles = {
+  /* 🔴 TÜM FOTOĞRAFLARIN ARKASINDAKİ TEK ARKA PLAN */
+  outerWrapper: {
+    position: "relative",
+    padding: "60px 20px",        // ⬅️ artır = arka plan daha çok görünür
+    backgroundSize: "cover",     // ⬅️ cover / contain dene
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    
+    /* ⬇️ ARKA PLANIN BELİRGİNLİĞİ */
+    filter: "brightness(1)",   // ⬅️ 0.7 = koyu / 1 = normal
+  },
+
   container: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    gap: "10px",
-    marginBottom: "10px",
+    gap: "30px",
   },
+
   row: {
     display: "flex",
-    gap: "10px",
+    gap: "18px",                 // ⬅️ kutular arası boşluk
     justifyContent: "center",
     width: "100%",
   },
+
   box: {
     width: "100%",
     maxWidth: "450px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    textAlign: "center",
-    borderRadius: "12px",
-    padding: "2px",
-    backgroundColor: "white",
+    borderRadius: "14px",
+    overflow: "hidden",
+    backgroundColor: "#fff",
+
+    /* ⬇️ arka plan ile fotoğraf ayrımı */
+    boxShadow: "0 10px 40px rgba(0,0,0,0.25)",
   },
+
   image: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    borderRadius: "8px",
+    borderRadius: "14px",
   },
-  title: {
-    fontSize: "28px",
-    fontWeight: "bold",
-    color: "#0b3d51",
-    marginBottom: "1px",
-  },
-  description: {
-    fontSize: "20px",
-    color: "#333",
-    lineHeight: "1.4",
-  },
+  outerWrapper: {
+  position: "relative",
+  padding: "60px 20px",
+  backgroundImage: "url(/arka.png)", // Arka plan fotoğrafı
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+
+  /* 🔴 KENARLAR SAYDAM, İÇE DOĞRU OPAK */
+  /* Arka planın üst ve alt kenarları saydam, ortası opak */
+WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
+WebkitMaskRepeat: "no-repeat",
+WebkitMaskPosition: "center",
+WebkitMaskSize: "cover",
+maskImage: "linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
+maskRepeat: "no-repeat",
+maskPosition: "center",
+maskSize: "cover",
+
+},
+
 };
 
 export default Foto;
