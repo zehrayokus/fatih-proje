@@ -1,10 +1,26 @@
 // Navbar.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+useEffect(() => {
+  const handleClickOutside = (e) => {
+    if (
+      isOpen &&
+      !e.target.closest(".menu") &&
+      !e.target.closest(".hamburger")
+    ) {
+      setIsOpen(false);
+    }
+  };
 
+  document.addEventListener("click", handleClickOutside);
+
+  return () => {
+    document.removeEventListener("click", handleClickOutside);
+  };
+}, [isOpen]);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -32,16 +48,7 @@ function Navbar() {
     <nav className="navbar">
       {/* Logo resmi */}
       <div className="logo">
-        <img
-          src="/logo2.png"
-          alt="Logo"
-          style={{
-            height: "100px",
-            borderRadius: "100px",
-            marginLeft: "100px",
-            marginTop: "6px",
-          }}
-        />
+    <img src="/logo2.png" alt="Logo" />
       </div>
 
       <div className={`menu ${isOpen ? "open" : ""}`}>
