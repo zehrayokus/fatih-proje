@@ -22,8 +22,10 @@
 }
 
 .logo-img {
-  height: 55px;
+  height: 55px !important;
   border-radius: 50%;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
 }
 
 /* Menü */
@@ -47,9 +49,9 @@
 }
 
 /* 📱 MOBİL */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar {
-    padding: 0 16px;
+    padding: 0 12px;
   }
 
   .menu {
