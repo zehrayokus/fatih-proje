@@ -78,7 +78,7 @@ const containerStyle = {
   gap: "10px",
   width: "100%",
   maxWidth: "100%",
-  margin: "30px auto",
+  margin: "20px auto",
   padding: "0 16px", // 🔑 kenarlardan az boşluk
   boxSizing: "border-box",
   flexWrap: "wrap", // 🔑 mobilde alt alta

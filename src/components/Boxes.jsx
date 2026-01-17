@@ -54,6 +54,7 @@ const styles = {
     margin: "0 auto 100px auto",
     boxSizing: "border-box",
     padding: "0 10px",
+    
   },
 
   box: {
@@ -87,7 +88,7 @@ const styles = {
   text: {
     fontSize: "14px",
     color: "#444",
-    lineHeight: "1.2",
+    lineHeight: "1.4",
     wordBreak: "break-word",       // 🔴 TAŞMA YOK
     overflowWrap: "break-word",
     marginTop: "-0.1px",
