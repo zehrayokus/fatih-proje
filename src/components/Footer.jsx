@@ -38,7 +38,7 @@ const containerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  gap: "10px",
+  gap: "1px",
   flexWrap: "wrap", // 🔑 MOBİLDE ALT ALTA
   boxSizing: "border-box",
 };

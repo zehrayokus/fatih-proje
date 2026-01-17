@@ -93,7 +93,7 @@ const styles = {
   container: {
     width: "100%",
     maxWidth: "1100px",
-    margin: "40px auto",
+    margin: "70px auto",
     padding: "20px",
     border: "1px solid #ddd",
     borderRadius: "12px",
@@ -111,7 +111,7 @@ const styles = {
   title: {
     fontSize: "32px",
     color: "#0b3d51",
-    margin: 0,
+    marginBottom: "10 px",
   },
   subtitle: {
     marginTop: "10px",

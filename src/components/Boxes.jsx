@@ -48,11 +48,12 @@ const styles = {
     display: "flex",
     flexWrap: "wrap",              // 🔴 ALT SATIRA GEÇ
     justifyContent: "space-between",
-    gap: "10px",
+    gap: "12px",
     width: "100%",
     maxWidth: "900px",
     margin: "0 auto 100px auto",
     boxSizing: "border-box",
+    padding: "0 10px",
   },
 
   box: {
@@ -60,7 +61,7 @@ const styles = {
     backgroundColor: "#f9f9f9",
     border: "1px solid #e0e0e0",
     borderRadius: "14px",
-    padding: "10px",
+    padding: "8px 2vw",
     textAlign: "center",
     boxShadow: "0 6px 14px rgba(0,0,0,0.08)",
     display: "flex",
@@ -73,7 +74,6 @@ const styles = {
     width: "70px",
     height: "70px",
     objectFit: "contain",
-    marginBottom: "1px",
   },
 
   title: {
@@ -90,6 +90,7 @@ const styles = {
     lineHeight: "1.2",
     wordBreak: "break-word",       // 🔴 TAŞMA YOK
     overflowWrap: "break-word",
+    marginTop: "-0.1px",
   },
 };
 

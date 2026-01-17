@@ -75,10 +75,10 @@ const containerStyle = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "flex-start",
-  gap: "30px",
+  gap: "10px",
   width: "100%",
   maxWidth: "100%",
-  margin: "40px auto",
+  margin: "30px auto",
   padding: "0 16px", // 🔑 kenarlardan az boşluk
   boxSizing: "border-box",
   flexWrap: "wrap", // 🔑 mobilde alt alta
@@ -88,7 +88,7 @@ const textBoxStyle = {
   flex: "1 1 280px",
   fontSize: "18px",
   color: "#001016ff",
-  lineHeight: "1.5",
+  lineHeight: "1.4",
   maxWidth: "420px",
 };
 
